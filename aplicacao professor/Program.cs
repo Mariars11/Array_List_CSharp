@@ -17,13 +17,12 @@ namespace aplicacao_professor
                 nomeAlunos[i] = Console.ReadLine();
             }  
 
-            Array.Sort(nomeAlunos);
+            Array.Sort(nomeAlunos); //coloca os nomes em ordem alfabetica
             Console.WriteLine("\nOs nomes dos alunos em ordem alfabética: ");
             Console.WriteLine("==== Pressione qualquer tecla para que os nomes apareçam! ==== ");
             for(int i = 0; i < nomeAlunos.Length; i++){
                 int rank = i + 1;
                 Console.Write(rank + (" - ") + nomeAlunos[i]);
-                nomeAlunos[i] = Console.ReadLine();
             } 
         }
     }
